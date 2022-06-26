@@ -25,10 +25,44 @@ header nav{
 header button{
     display: none;
 }
-main{
-    
+.containter-intro{
+    width: 375px;
+    text-align: center;
+    align-items: center;
 }
-
+.containter-intro, h2{
+   
+    font-size: 4rem;
+    text-align: center;
+}
+.containter-intro, .text-intro, button{
+    text-align: center;
+    align-items: center;
+}
+p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+h3{
+    font-size:3rem ;
+    text-align: center;
+}
+h6{
+    text-align: center;
+    font-size: 2rem;
+}
+button{
+    height: 44px;
+    width: 143px;
+    border-radius: 50px;
+    background-color: #F3603B;
+}
+button[type="button"]{
+    height: 44px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #F3603B; 
+}
 footer{
 
 }
