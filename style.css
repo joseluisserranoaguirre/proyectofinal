@@ -18,9 +18,17 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    height: 20px;
+    height: 60px;
     padding-left:20px ;
     padding-right:20px ;
+}
+header .logo{
+    width: 120px;
+    height: 20px;
+}
+header .img_hamburger{
+    width: 30px;
+    height: 20px;
 }
 header nav{
     display: none;
@@ -225,11 +233,10 @@ nav ul{
         width: 1440px;
     }
     .nav__star{
-        
-        display: inline-block;
-        
-        color: black;
+        display: inline-block;        
+        color: black;        
     }
+    
     header .nav__star ul{
         display: flex;
         color: black;
@@ -237,11 +244,16 @@ nav ul{
     header button{
         display: block;
     }
+    .img_hamburger{
+        visibility: hidden;
+    }
     .container-intro{
         display: flex;
         flex-direction: row-reverse;
         justify-content:center;
+        width: 100%;
         gap: 15rem;
+       
     }
 
     .container-intro .img-intro{
@@ -252,26 +264,33 @@ nav ul{
     }
     .container-intro .text-intro{
         display: flex;
+        text-align: left;
         flex-direction: column;
         justify-content: center;
-        
+        height: 100%;
+       
     }
     .container-intro .text-intro h2{
         width: 439px;
         height: 198px;
         font-size: 5.8rem;
-        margin: 0px;
+        margin-bottom: 90px;
+        font-weight: 700px;
+
     }
     .container-intro .text-intro p{
         width: 350px;
         height: 71px;
+        margin-bottom: 30px;
+        padding-left: 0px ;
     }
     .about{
         flex-direction: row;
-        width: 1111px;
+        width: 100%;
         height: 549px;
         margin-right: 10px;
         margin-top: 10px;
+        justify-content: space-between;
     }
     p{
         font-size: 1.65rem;
