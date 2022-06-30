@@ -288,7 +288,7 @@ nav ul{
 
 }
 
-@media screen and (min-width:420px) {
+@media screen and (min-width:375px) {
    
     body{
         width: 1440px;
