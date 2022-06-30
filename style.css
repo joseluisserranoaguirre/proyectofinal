@@ -168,10 +168,23 @@ main{
     padding-top:80px ;
     width: 260px;
 }  
-.avatar_ali img, .avatar_richard img, .avatar_anisha img{
+.avatar_ali img,
+ .avatar_richard img, 
+ .avatar_anisha img{
     display: flex;
     position: relative;
     top: -80px;
+}
+.avatar_ali img,
+ .avatar_anisha img,
+  .avatar_richard img{
+    transform-style: preserve-3d;
+    transition: all 2s cubic-bezier(.6,.11,0,.88);
+    
+}
+.avatar_ali img:hover, .avatar_anisha img:hover, .avatar_richard img:hover{
+    transform: rotateY(1440deg);
+    
 }
 .button_comment{
     display: flex;
@@ -224,6 +237,8 @@ button{
     background-color: var(--colorprimario) ;
     text-align: center;
     box-shadow: var(--colorshadow);
+    transition: all 1000ms;
+        
 }
 button[type="button"]{
     height: 44px;
@@ -232,16 +247,23 @@ button[type="button"]{
     background-color:var(--colorprimario) ;
     
 }
+button:hover{
+    cursor: pointer;
+    filter: invert(100%);
+    background-color: var(--colorhover);
+    transform: scale(1.2, 1.2);
+
+}
 footer{
  display: flex;  
  flex-direction: column; 
 background-color:var(--colorscundario) ;
 margin-top: 40px;
 margin: 0px;
-padding-left: 20px;
 color: var(--colorletter) ;
 gap:3rem;
 width: 100%;
+text-align: center;
 }
 .nav-footer{
     padding-top: 20px;
@@ -254,18 +276,26 @@ width: 100%;
     width: 120px;
     height: 20px;
 }
-.icons_media{
+.icons_social{
     display: flex;
-    gap: 3rem;
-    width: 100%;
+    
+    width: 80%;
+    justify-content: space-between;
 }
- form input{
+ input{
     height: 44px;
     border-radius: 50px;
+    width: 70%;
+    transition: all 1000ms;
  }
+ input:focus{
+    background-color:var(--colorfocus);
+    color:var(--colorletter) ;
+}
  button[type="submit"]{
     width: 63px;
     height: 42px;
+    
 }
  .nav_end{
     display: flex;
@@ -393,7 +423,9 @@ nav ul{
         padding-left: 20px;
         padding-right: 20px;
     }
-    .avatar_anisha,  .avatar_richard, .avatar_ali{
+    .avatar_anisha,
+      .avatar_richard,
+       .avatar_ali{
         display: flex;
         width: 80%;
 
@@ -402,15 +434,7 @@ nav ul{
         width: 95%;
 
     }
-    .avatar_ali img, .avatar_anisha img, .avatar_richard img{
-        transform-style: preserve-3d;
-        transition: all 2s cubic-bezier(.6,.11,0,.88);
-        
-    }
-    .avatar_ali img:hover, .avatar_anisha img:hover, .avatar_richard img:hover{
-        transform: rotateY(1440deg);
-        
-    }
+    
     
     .message_text{
         width: 100%;
@@ -420,11 +444,22 @@ nav ul{
         position: absolute;
         left: 650px;
     }
+    footer{
+        justify-content: space-between;
+        padding-left: 20px;
+    }
     .nav-footer{
         flex-direction: row;
         width: 100%;
         gap: 20rem;
         position: relative;
+    }
+    .nav-footer__social{
+        width: 30%;
+    }
+    .icons_social{
+        width: 100%;
+        justify-content: space-between;
     }
     .nav_end{
         gap: 15rem;
@@ -433,27 +468,8 @@ nav ul{
     .nav_end ul li{
         font-size: 1.6rem;
     }
-    input{
-        width: 201px;
-        transition: all 1000ms;
-    }
-    input:focus{
-        background-color:var(--colorfocus);
-        color:var(--colorletter) ;
-    }
     
-     button{
-        transition: all 1000ms;
-        
-     }
-    
-    button:hover{
-        cursor: pointer;
-        filter: invert(100%);
-        background-color: var(--colorhover);
-        transform: scale(1.2, 1.2);
-
-    }
+       
     form{
         width: 25%;
     }
