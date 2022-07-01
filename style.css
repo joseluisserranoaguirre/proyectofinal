@@ -243,7 +243,20 @@ button{
     text-align: center;
     box-shadow: var(--colorshadow);
     transition: all 1000ms;
+    animation: button 2s infinite cubic-bezier(.6,.11,0,2.88);
         
+}
+@keyframes button{
+    0%{transform:rotate3d(1, 1, 1, 20deg);
+        perspective: 340px;
+            
+     }
+     100%{transform:rotate3d(-1, -1, -1, 20deg);
+        perspective: 340px;
+            
+     }
+    
+    
 }
 button[type="button"]{
     height: 44px;
