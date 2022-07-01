@@ -323,10 +323,10 @@ nav ul{
 
 }
 
-@media screen and (min-width:420px) {
+@media screen and (width:1440px) {
    
     body{
-        width: 1440px;
+        width: 100%;
     }
     main{
         gap: 8rem;
